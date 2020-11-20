@@ -12,8 +12,7 @@ host = 'audb-ro.bi-prod.asu.edu'
 port = '5432'
 #user = os.getenv('AUDB_USERNAME', default=False)
 #pwd = os.getenv('AUDB_PASSWORD', default=False)
-user = 'asu_collibra_app'
-pwd = 'ASUDataGovernance123'
+
 if(not user or not pwd):
     # TODO: Send alert through SNS topic
     print("Alteryx User or Alteryx Pwd not set yet")
