@@ -7,9 +7,9 @@ import sys
 
 
 # Credentials
-dbname = 'audb'
-host = 'audb-ro.bi-prod.asu.edu'
-port = '5432'
+dbname = os.getenv('AUDB_DBNAME', default=False)
+host = os.getenv('AUDB_HOST', default=False)
+port = os.getenv('AUDB_PORT', default=False)
 #user = os.getenv('AUDB_USERNAME', default=False)
 #pwd = os.getenv('AUDB_PASSWORD', default=False)
 
